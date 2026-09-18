@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "campaign": "L’Ombre des Convois",
+    "project": "JDR - Star Wars - A nobody's story",
+    "gm": "Z6-P0",
+    "save_date": "2026-09-17",
+    "era_lock": "Quelques années avant l’Épisode I (~32 BBY), aucun élément postérieur.",
+    "resume": {
+      "location": "Forteresse de Solitude, K7-9",
+      "scene": "Rhod est en communication sécurisée avec le client du contrat Eriadu concernant le Vesper Tide et le module VT-N7.",
+      "last_player_action": "« Origine de l’avarie ? »",
+      "last_answer": [
+        "Défaillance du réseau de puissance secondaire",
+        "Chute brutale de tension",
+        "Surchauffe sur plusieurs relais",
+        "Perte partielle de propulsion",
+        "Aucun impact majeur de coque",
+        "Cause profonde non déterminée",
+        "Aucune preuve officielle de sabotage",
+        "Pas d’expertise complète car jugée trop coûteuse"
+      ],
+      "contract_status": "Sélectionné mais pas encore explicitement accepté"
+    }
+  },
+  "hard_continuity": [
+    "Les actions jouées et corrections explicites du joueur priment sur les documents obsolètes.",
+    "Le joueur lance uniquement les jets de Rhod ; les PNJ sont résolus par le MJ.",
+    "Yoren est définitivement mort.",
+    "Le sabre de Yoren appartient maintenant à Rhod.",
+    "Solen appartient à Rhod.",
+    "Free Roam appartient à Kali.",
+    "Kali sait piloter.",
+    "Lu’Han est un arc romantique clos.",
+    "L’observateur inconnu reste latent.",
+    "Œil Mort est silencieux.",
+    "L’Holocron reste sécurisé et non étudié sans action explicite."
+  ],
+  "rhod": {
+    "name": "Rhod Exo",
+    "age": 25,
+    "origin": "Coruscant, Secteur 1313",
+    "level": 2,
+    "xp": {"current": 155, "next": 300},
+    "hp": {"current": 50, "max": 50},
+    "credits": 34916,
+    "momentum": 0,
+    "force": {"stage": "CONSCIENTE", "bonus": 4, "light": 4, "dark": 4, "balance": 0},
+    "stats": {"agi_dex": 4, "cha": 3, "int": 3, "str": 3, "con": 2},
+    "skills": {
+      "blaster": 4, "stealth": 4, "space_piloting": 4, "atmo_piloting": 3,
+      "underworld": 4, "melee": 3, "slicing": 3, "mechanics": 3,
+      "space_nav": 3, "deception": 3, "negotiation": 2, "intimidation": 2,
+      "slicing_with_r3": 7
+    },
+    "traits": ["Rusé", "Séducteur", "Joueur", "Pragmatique", "Curieux"],
+    "equipment": [
+      "Armure légère RD5", "A-180 1d8", "Dague cortosis 1d4+1",
+      "Gantelet Cortosis-Vitre : lame 55–60 cm 1d10 OU projectile 1d8, 12 tirs",
+      "Sabre laser blanc à légère teinte bleue, anciennement Yoren, désormais Rhod",
+      "Comlink chiffré", "Kit de slicing compact", "Grenade ionique x1",
+      "Grenade soporifique x1", "~3 stims standards"
+    ],
+    "wound": "Cicatrice superficielle de sabre aux côtes, sans effet mécanique"
+  },
+  "solen": {
+    "type": "HWK-290 modifié", "owner": "Rhod", "status": "40/40, nominal",
+    "location": "Forteresse de Solitude",
+    "mods": [
+      "Double tourelle ventrale rétractable/rotative 2d10",
+      "Réduction signature/thermique/émissions", "Soute renforcée",
+      "Stockage caché", "Cockpit personnalisé", "Section de vie"
+    ],
+    "security": "Ancien scan de sécurité Coruscant existant mais nouvelle signature affaiblit les correspondances."
+  },
+  "r3": {
+    "status": "Opérationnel", "bond": "Familial / absolu avec Rhod",
+    "upgrade": "Module mémoire secondaire renforcé + sauvegarde locale sécurisée",
+    "current_plan": "Accompagne Rhod si la mission Eriadu est acceptée"
+  },
+  "fortress": {
+    "name": "Forteresse de Solitude", "location": "K7-9", "status": "Nominale",
+    "eye_of_dead": "Silencieux", "unknown_observer": "Latent",
+    "holocron": "Sécurisé, non étudié sans action explicite",
+    "rakatan_war_chest": "Scellé",
+    "projects": [
+      "Système d’alerte avancé", "Infirmerie", "Fausse signature thermique",
+      "Canon de défense fixe", "Chambre personnelle de Kali", "Free Roam"
+    ]
+  },
+  "kali": {
+    "status": "À la Forteresse, travaille sur Free Roam",
+    "role": "Mécanicienne / ingénieure",
+    "personality": ["Pratique", "Directe", "Joueuse", "Indépendante", "Têtue"],
+    "pilot": true,
+    "piloting_experience": [
+      "Speeders", "Vaisseaux légers/utilitaires", "Manœuvres de hangar",
+      "Vols d’essai", "Premier vrai saut hyperspatial avec Rhod/R3",
+      "A piloté Free Roam d’Ord Mantell à K7-9"
+    ],
+    "weapon": "Blurrg-1120, familiarisation de base",
+    "relationship_with_rhod": "Très forte, intime, romantique, non formellement étiquetée. Accord : pas de disparition pour protéger, pas de décision à la place de l’autre.",
+    "recent": "Deux jours de vacances sur Manaan, première mer, lien renforcé."
+  },
+  "free_roam": {
+    "type": "Max-7 Rono box freighter", "owner": "Kali",
+    "status": "Fonctionnel, en cours de finition",
+    "purchase": {"ship": 9000, "repair_basket": 3800, "kali_share": 1200, "rhod_share": 2600},
+    "systems": {
+      "structure": "Saine", "engines": "Fiables mais anciens", "hyperdrive": "Stabilisé",
+      "electrical": "Largement refait et sécurisé", "workshop_power": "Indépendant et opérationnel",
+      "cooling": "Fiable", "sensors": "Modernisés", "diagnostics": "Fonctionnels",
+      "workshop": "~70%", "living": "~60%", "shields": "Faibles",
+      "armament": "Aucun", "acceleration_compensator": "Ancien, à améliorer"
+    },
+    "future_priorities": [
+      "Boucliers", "Compensateur", "Finitions atelier", "Confort",
+      "Esthétique", "Armement défensif léger"
+    ],
+    "authority": "Kali contrôle entièrement le projet."
+  },
+  "cache_1": {
+    "status": "Stable, en consolidation", "monthly_income": 8640,
+    "monthly_costs": {"Solen": 800, "Forteresse": 1000},
+    "net": 6840, "leader": "Shaleea", "security": "Gournard",
+    "colonists": "Mieux structurés, moins en survie, habitation/stockage/maintenance/infirmerie rudimentaire/ateliers communs.",
+    "remaining_issues": ["Fatigue", "Conflits ordinaires", "Matériel médical limité", "Expansion voulue trop rapide par certains"],
+    "gournard": "Toujours vigilant, efficace, n’a récemment ni menacé de partir ni désintégré quelqu’un.",
+    "recent_security": [
+      "Deux appareils non identifiés vus à longue distance",
+      "Pas d’approche confirmée comme reconnaissance", "Pas de trace claire de Meraad",
+      "Porte dormante isolée", "K-77 / Meraad latents"
+    ],
+    "latest_call": "Rhod a parlé à Shaleea après Manaan et lui a demandé de saluer Gournard."
+  },
+  "threads": {
+    "Dakon_Vurr": "Imprisonné/contenu mais menace longue durée active.",
+    "Vizago_Tongs_Noirs": "Actifs en arrière-plan, réputation -2, activité en hausse, pas de lien direct actuel.",
+    "Jedi": "Enquête hors écran sur Yoren/Auresh-17.",
+    "unknown_observer": "Latent.", "Force": "Progression lente active.",
+    "Fortress_strategy": "Active.",
+    "Solen_scan": "Ancienne empreinte encore existante mais affaiblie."
+  },
+  "recent_manaan": {
+    "duration": "2 jours", "purpose": "Pause et découverte de la mer pour Kali",
+    "events": [
+      "Première vision de la mer", "Première baignade", "Restaurant, verre, promenade",
+      "Lumière mobile sous-marine observée ; décision de ne pas enquêter", "Marché",
+      "Course de speeders aquatiques", "Rhod gagne, Kali veut une revanche terrestre",
+      "Dernière baignade", "Holo souvenir", "Retour K7-9"
+    ],
+    "rolls": [
+      "Baignade : 2+4=6 échec partiel", "Observation : 12+3=15 réussite partielle",
+      "Pilotage rattrapage : 12+3=15 réussite partielle", "Sprint final : 14+3=17 réussite"
+    ],
+    "hostile_consequences": "Aucune"
+  },
+  "contract_search": {
+    "roll": "12+7=19 réussite",
+    "contracts": [
+      {"name": "Extraction ingénieur", "reward": 18000, "risk": "Élevé"},
+      {"name": "Récupération VT-N7 sur Eriadu", "reward": 11500, "risk": "Modéré / inconnue commerciale", "selected": true},
+      {"name": "Convoyage Ryloth", "reward": 8800, "risk": "Faible à modéré"},
+      {"name": "Appareil disparu", "reward": "14000 + récupération", "risk": "Modéré / évolutif"}
+    ]
+  },
+  "current_mission": {
+    "name": "Récupération VT-N7 sur Eriadu", "status": "Pas encore explicitement accepté",
+    "ship": "Vesper Tide", "location": "Zone orbitale industrielle secondaire d’Eriadu",
+    "target": "Module mémoire blindé VT-N7",
+    "target_specs": "~30 cm, coque noire renforcée, connecteur propriétaire, ~5 kg",
+    "payment": {"total": 11500, "advance": 2500, "balance": 9000},
+    "deadline": "36h après acceptation",
+    "objective": [
+      "Entrer dans Vesper Tide", "Atteindre compartiment de navigation secondaire",
+      "Récupérer VT-N7", "Ne pas ouvrir/lire/copier", "Repartir et remettre au client"
+    ],
+    "known_risks": ["Débris", "Vieux docks", "Structures abandonnées", "Récupérateurs opportunistes"],
+    "damage_origin": {
+      "official": "Défaillance réseau de puissance secondaire",
+      "details": [
+        "Chute brutale de tension", "Surchauffe de relais",
+        "Coupure de systèmes pour éviter incendie", "Poussée instable", "Dérive",
+        "Aucun impact majeur", "Cause racine inconnue",
+        "Sabotage non prouvé, non exclu", "Pas d’expertise complète"
+      ]
+    },
+    "suspicion": "Prime élevée pour de prétendues données commerciales de routine. Client prudent dans ses formulations.",
+    "party_plan": {
+      "Rhod": "part si accepté", "R3": "accompagne",
+      "Kali": "reste à la Forteresse sur Free Roam"
+    }
+  },
+  "finances": {
+    "credits": 34916, "cache_income": 8640, "structural_costs": 1800,
+    "structural_net": 6840,
+    "note": "L’avance Eriadu de 2500 cr n’est PAS encore comptabilisée."
+  },
+  "key_history": {
+    "Yoren": "Corrompu par l’Holocron, duel final, tué par Rhod, crémation Auresh-17, cendres dispersées.",
+    "Jedi_Temple": "Rhod n’a pas rendu le sabre ; a transmis anonymement ID Yoren + Auresh-17 ; croisé Qui-Gon et Obi-Wan.",
+    "Kali_reunion": "Retrouvée après ~15 ans ; mensonge de Dakon révélé ; départ de Coruscant avec Rhod.",
+    "Free_Roam_origin": "Acheté sur Ord Mantell et offert à Kali ; symbole d’autonomie."
+  }
+}
