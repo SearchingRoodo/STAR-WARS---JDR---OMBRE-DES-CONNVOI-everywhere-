@@ -1,0 +1,18 @@
+{
+  "name": "ombre-des-convois-discord-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Passerelle Discord et sauvegarde Git de L'Ombre des Convois.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/campaign.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1"
+  }
+}
