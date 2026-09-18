@@ -1,0 +1,28 @@
+name: Campaign health check
+
+on:
+  push:
+    paths:
+      - "CURRENT_STATE.md"
+      - "SESSION_LOG.md"
+      - "BACKLOG.md"
+      - "saves/**"
+      - "scripts/validate_campaign.py"
+      - ".github/workflows/campaign-health.yml"
+  schedule:
+    - cron: "17 04 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate campaign continuity
+        run: python scripts/validate_campaign.py
